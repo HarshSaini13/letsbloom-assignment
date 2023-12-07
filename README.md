@@ -50,3 +50,9 @@ Request Body: JSON object with updated book details. For example:-
 }
 ```
 Note: Please don't miss the '/' at the end of endpoint because it is necessary for PUT request
+
+For final clarification here are some images while I was testing the API:-
+
+<img width="843" alt="Screenshot 2023-12-07 at 12 25 13 PM" src="https://github.com/HarshSaini13/letsbloom-assignment/assets/78219532/10025d18-ee6b-49c4-a8bc-0ab2d3e572c3">
+
+<img width="842" alt="Screenshot 2023-12-07 at 12 26 04 PM" src="https://github.com/HarshSaini13/letsbloom-assignment/assets/78219532/7378cfaa-70cc-455b-913a-e325bf728438">
