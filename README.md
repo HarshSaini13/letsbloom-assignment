@@ -23,10 +23,10 @@ Replace name, description, author and genre as per your book.
 
 ## Endpoint description
 ### Endpoint 1: Retrieve All Books
-Endpoint: GET libraryapi/
+Endpoint: GET `/libraryapi/`
 
 ### Endpoint 2: Add a New Book
-Endpoint: POST libraryapi/
+Endpoint: POST `/libraryapi/`
 Request Body: JSON object representing the new book. For example:-
 ```
 {
@@ -39,7 +39,7 @@ Request Body: JSON object representing the new book. For example:-
 Note: Please don't miss the '/' at the end of endpoint because it is necessary for POST request
 
 ### Endpoint 3: Update Book Details
-Endpoint: PUT libraryapi/{book_id}
+Endpoint: PUT `/libraryapi/{book_id}/`
 Request Body: JSON object with updated book details. For example:-
 ```
 {
@@ -49,3 +49,4 @@ Request Body: JSON object with updated book details. For example:-
         "genre": "Thriller/Crime"
 }
 ```
+Note: Please don't miss the '/' at the end of endpoint because it is necessary for PUT request
