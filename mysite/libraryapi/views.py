@@ -25,6 +25,12 @@ class BookList(APIView):
     def post(self, request):
         serializer = LibrarySerializer(data=request.data)
         if serializer.is_valid():
+            name = serializer.validated_data.get('name')
+            author = serializer.validated_data.get('author')
+
+            if Library.objects.filter(name=name, author=author).exists():
+                return Response({"error": "This book already exists."}, status=status.HTTP_400_BAD_REQUEST)
+
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
